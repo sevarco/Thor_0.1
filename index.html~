@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!---Fait avec le framework BOOTSTRAP et inspiré du CSS de FRAMASOFT--->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>THORVALVSEN</title>
+
+    <!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+ <!-- Bootstrap theme -->
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="css/theme.css" rel="stylesheet">
+<link href="css/thorvalvsen.css" rel="stylesheet">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body role="document">
+
+ <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	  <span class="sr-only">Toggle navigation</span>
+	  <span class="icon-bar"></span>
+	  <span class="icon-bar"></span>
+	  <span class="icon-bar"></span>
+	  <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">THORVALVSEN</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Accueil</a></li>
+            <li><a href="#prototype">Prototype</a></li>
+	    <li><a href="#simulation">Simulation</a></li>
+	    <li><a href="#contact">Contact</a></li>
+	  </ul>
+	</div><!--/.nav-collapse -->
+    </nav>
+
+
+   <div class="container theme-showcase" role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+   <div class="jumbotron">
+     <h2>THORVALVSEN</h2>
+     <h3>Modelisation Industrielle Open Source</h3>
+   </div>
+
+<div class="row">
+  <div class="col-sm-12 col-md-6">
+    <div class="thumbnail">
+      <img src="img/U892-Skid02I.jpg" alt="Skid IFPEN">
+      <div class="caption">
+      <h2>Prototype numérique</h2>
+      <ul>
+	<p>Un prototype numérique permet de simuler le fonctionnement d'une installation à partir des équipements et des fluides. Chaque équipement est modelisé à partir de ses équations de comportement, le prototype permet de comprendre plus finement le comportement d'une installation.</p>
+	<p><a href="#prototype" class="btn btn-primary" role="button">ALLER</a></p>
+      </ul>
+    </div>
+    </div>
+    </div>
+
+    <div class="col-sm-12 col-md-6">
+    <div class="thumbnail">
+      <img src="img/Emergency-Generator.jpg" alt="Groupe Electrogene">
+      <div class="caption">
+      <h2>Simulation Dynamique</h2>
+	<p>Un équipement est en fait l'assemblage de différents éléments conçus indépendamment. Simuler dynamiquement permet de tester le comportement de l'ensemble des composants.</p>
+	<p>Par exemple une régulation, une réponse vibratoire, ...</p>
+	<p><a href="#simulation" class="btn btn-primary" role="button">ALLER</a></p>
+    </div>
+    </div>
+    </div>
+ </div>
+
+ <div class="page-header" id="prototype">
+  <h1>Prototype numerique</h1>
+ </div>
+ 
+<div class="row">
+<div class="col-sm-12 col-md-6">
+  <img src="img/img1.png" class="img-responsive" alt="Boucle de régulation thermique">
+</div>
+
+<div class="col-sm-12 col-md-6">
+  <p>Un prototype numérique confronte le comportement dynamique d'un ou plusieurs fluides aux équipements installés. Cela permet de mettre en évidence les phénomènes de cavitation, les hysterésis et principes de régulation. Le prototype numérique permet aussi de simuler et quantifier les conséquences de fonctionnement anormaux:</p>
+  <li>Quelle serait la conséquence d'une augmentation de température? De sa rapidité ?</li>
+  <li>D'une augmentation de pression ?</li>
+  <p>Un prototype permet également d'optimiser utilités et énergie consommée en associant les données procédés aux caractéristiques mécaniques, électriques des équipements envisagés et d'optimiser en fonction, l'ensemble avant commande et construction.</p>		
+</div>             
+</div>
+
+<h3><a class="vert">En réalisation</a></h3>
+
+
+<div class="row">
+<div class="col-sm-12 col-md-6">
+  <p>Reprise du modèle à partir des caractéristiques des équipements consultés pour associer coût et performance, analyse de la valeur.</p>
+  <ul>
+    <li>Un equipement à haut rendement est il necessaire, quel serait son amortissement ?</li>
+    <li>Peut on profiter d'un effet de gamme en modifiant les performances de l'équipement ?</li>
+  </ul>
+  <p>La simulation permet de le quantifier de manière réaliste en fonction des conditions de fonctionnement.</p>
+  <p>La simulation permet également d'extraire l'ensemble des paramètres, en particulier les valeurs de gain et des constantes de temps des boucles de régulation, ce qui permet justement un gain de temps lors de la mise en service.</p>
+</div>
+
+<div class="col-sm-12 col-md-6">
+  <img src="img/U002_Flo.png" class="img-responsive" alt="Une drole de régulation">
+</div>
+</div>
+
+<div class="row">
+  <p></p>
+</div>
+
+<h3><a class="rouge">Et après ?</a></h3>
+<div class="row">
+  <p>Il suffit de recaler le modèle pour obtenir un prototype "As Build". Un changement de produit ? De nouvelle specification ?Beaucoup plus rapide et moins onéreux qu'un essai en grandeur nature ...</p>                
+</div>
+
+<div class="row">
+  <p></p>
+</div>
+
+ <div class="page-header" id="simulation">
+   <h1>Simulation Dynamique Equipement Rotatif</h1>
+ </div>
+ 
+ <div class="row">
+ <div class="col-sm-12 col-md-6">
+	  <p>La methode consiste à simuler l'équipement dans sa compléxité:</p>
+	  <ul>
+	    <li>Considérer l'ensemble des composants en rotation comme des sources d'excitation,</li>
+	    <li>Intégrer les systèmes de régulation, les élements structuraux, les dispositifs de filtration,</li>
+	    <li>Observer le comportement de l'ensemble...</li>  	  
+	  </ul>
+	</div>
+	
+
+	<div class="col-sm-12 col-md-6">
+	  <img src="img/U100.png" class="img-responsive" alt="Un Groupe Electro " />
+	</div>
+	</div>
+
+	<div class="row">
+	  <p></p>
+	  <p></p>
+	</div>
+	  
+	<div class="row">
+	<h3><a class="rouge">Observation du comportement</a></h3>
+	<div class="row">
+	<div class="col-sm-12 col-md-4">
+	    <img src="img/U005_Res.png" class="img-responsive" alt="Quelques fréquences" />
+	</div>
+
+	<div class="col-sm-12 col-md-4">
+	  <p>Le système est représenté par ses caractéristiques mécaniques,</p>
+	  <ul>
+	    <li>Qui peuvent être complétées par une régulation sous la forme d'une boucle PID,</li>
+	    <li>Par une base modale determinée par éléments finis.</li>
+	  </ul>
+	  <p>Les résultats permettent de valider la conception d'un chassis, de choisir un accouplement par une analyse torsionnelle et de définir un système de découplage vibratoire pour éviter de les transmettre à la structure d'acceuil.</p>
+	</div>
+	<div class="col-sm-12 col-md-4">
+	    <img src="img/Chassis.jpg" class="img-responsive" alt="Un Chassis" />
+	</div>
+	</div>
+
+        <!--Contenus appelés dans le footer -->
+      	<footer  class="footer" id="contact">          
+                                <div class="section">
+                                    <h4>Crédits</h4>
+                                  <div class="text">
+                                    <p>Remerciement au consortium MODELICA pour la qualité et la robustesse des simulations dynamiques <a href="http://modelica.org">  MODELICA</a></p>
+				    <p>Remerciement à CODE ASTER pour la souplesse et la puissance de calcul <a href="http://www.code-aster.org">  CODE ASTER</a></p>				 
+                                  </div>
+                                </div>
+
+                                <div class="section">
+                                    <h4>Contact</h4>
+                                  <div class="text">
+                                    <p>Pour nous contacter : contact@thorvalsen.org ou au 06 11 70 39 66</p>
+                                  </div>
+                                </div>
+
+                                <div class="section">
+                                    <h4>Configuration minimale</h4>
+                                  <div class="text">
+                                    <p>Vous avez besoin d’un navigateur récent supportant les fonctionnalités du HTML5 et de la CSS3.
+                                      Chrome 10+, Firefox 3.6+, Safari 5+, Opera 10.6+, IE9+ devraient fonctionner correctement.</p>
+                                  </div>
+                                 </div>           
+        <!--finContenus appelés dans le footer -->
+        </footer>
+</div>    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
