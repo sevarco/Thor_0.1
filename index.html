@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <!---Fait avec le framework BOOTSTRAP et inspiré du CSS de FRAMASOFT--->
-<html lang="en">
+<html lang="fr">
   <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content=" THORVALVSEN s'attache à la promotion de l'usage et au développement de solution OPEN SOURCE dans une pratique quotidienne de société d'ingénierie.">
+<meta name="description" content=" THORVALVSEN s'attache à la promotion de l'usage et au développement de solution OPEN SOURCE.">
 <meta name="keywords" content="Thorvalvsen, prototype numérique, simulation dynamique, modelica, code aster">
 
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -18,7 +18,7 @@
 <!-- Custom styles for this template -->
 <link href="css/theme.css" rel="stylesheet">
 <link href="css/thorvalvsen.css" rel="stylesheet">
-
+<link rel="icon" href="http://getbootstrap.com/favicon.ico">
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -32,42 +32,53 @@
 <body role="document">
 
  <!-- Fixed navbar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-	  <span class="sr-only">Toggle navigation</span>
-	  <span class="icon-bar"></span>
-	  <span class="icon-bar"></span>
-	  <span class="icon-bar"></span>
-	  <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">THORVALVSEN</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Accueil</a></li>
-            <li><a href="#prototype">Prototype</a></li>
-	    <li><a href="#simulation">Simulation</a></li>
-	    <li><a href="#contact">Contact</a></li>
-	  </ul>
-	</div><!--/.nav-collapse -->
-    </nav>
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="navbar-header">
+  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+  <span class="sr-only">Toggle navigation</span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  </button>
+  <a class="navbar-brand" href="#contact">THORVALVSEN</a>
+</div>
+<div id="navbar" class="navbar-collapse collapse">
+  <ul class="nav navbar-nav">
+    <li><a href="#acceuil">Accueil</a></li>
+    <li><a href="#prototype">Prototype</a></li>
+    <li><a href="#simulation">Simulation</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+<!--/.nav-collapse -->
+</nav>
 
+<div class="container theme-showcase" role="main" id="acceuil">
 
-   <div class="container theme-showcase" role="main">
+<div class="row header">
 
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-   <div class="jumbotron">
-     <h2>THORVALVSEN</h2>
-     <h3>Modelisation Industrielle Open Source</h3>
-   </div>
+<div class="col-md-4">
+  <h1 class="sitename"><a class="orange">THORVALVSEN</a></h1>
+</div>
+
+<div class="col-md-8">
+  <p class="headerSubTitle">THORVALVSEN est une société de simulations numériques, nous utilisons exclusivement des outils OPEN SOURCE comme MODELICA, CODE ASTER, CODE SATURNE, SYRTHES ou OCTAVE, ...</p> 
+</div>
+
+</div>
+
+<div class=jumbotron>
+  <p>Prototypes numériques pour les industries à procédé ou énergétiques</p>
+  <p>Simulations dynamiques pour tous systèmes mécaniques.</p> 
+</div>
 
 <div class="row">
   <div class="col-sm-12 col-md-6">
     <div class="thumbnail">
       <img src="img/U892-Skid02I.jpg" alt="Skid IFPEN">
       <div class="caption">
-      <h2>Prototype numérique</h2>
+      <h3>Prototype numérique</h3>
       <ul>
 	<p>Un prototype numérique permet de simuler le fonctionnement d'une installation à partir des équipements et des fluides. Chaque équipement est modelisé à partir de ses équations de comportement, le prototype permet de comprendre plus finement le comportement d'une installation.</p>
 	<p><a href="#prototype" class="btn btn-primary" role="button">ALLER</a></p>
@@ -80,139 +91,211 @@
     <div class="thumbnail">
       <img src="img/Emergency-Generator.jpg" alt="Groupe Electrogene">
       <div class="caption">
-      <h2>Simulation Dynamique</h2>
+      <h3>Simulation Dynamique</h3>
 	<p>Un équipement est en fait l'assemblage de différents éléments conçus indépendamment. Simuler dynamiquement permet de tester le comportement de l'ensemble des composants.</p>
 	<p>Par exemple une régulation, une réponse vibratoire, ...</p>
 	<p><a href="#simulation" class="btn btn-primary" role="button">ALLER</a></p>
+      </div>
     </div>
     </div>
     </div>
- </div>
-
- <div class="page-header" id="prototype">
-  <h1>Prototype numerique</h1>
- </div>
- 
-<div class="row">
-<div class="col-sm-12 col-md-6">
-  <img src="img/img1.png" class="img-responsive" alt="Boucle de régulation thermique">
 </div>
 
-<div class="col-sm-12 col-md-6">
-  <p>Un prototype numérique confronte le comportement dynamique d'un ou plusieurs fluides aux équipements installés. Cela permet de mettre en évidence les phénomènes de cavitation, les hysterésis et principes de régulation. Le prototype numérique permet aussi de simuler et quantifier les conséquences de fonctionnement anormaux:</p>
-  <li>Quelle serait la conséquence d'une augmentation de température? De sa rapidité ?</li>
-  <li>D'une augmentation de pression ?</li>
-  <p>Un prototype permet également d'optimiser utilités et énergie consommée en associant les données procédés aux caractéristiques mécaniques, électriques des équipements envisagés et d'optimiser en fonction, l'ensemble avant commande et construction.</p>		
-</div>             
+<div class="container ombre" id="introduction">   
+  <div class="row header">
+    <h3><a class="vert">Qu'est ce qu'un PROTOTYPE NUMERIQUE</a></h3>
+  </div>
+  
+  <div class="row">
+    <div class="col-sm-12 col-md-12">
+      <p>Un prototype numérique est une simulation en continu d'une installation en fonctionnement, 
+	chaque composant ou equipement jouant un role dans le fonctionnement global est modélisé suivant ses équations de comportements,
+	chaque fluide est modélisé également suivant ses lois de comportement.</p>
+      <p>L'installation peut être pilotée en temps réel ou suivant des séquences prédéfinies, à l'identique d'un prototype.</p>
+      <p></p>
+    </div>             
+  </div>
+
+  <div class="row header">
+    <h3><a class="vert">Qu'est ce qu'une SIMULATION DYNAMIQUE</a></h3>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-md-12">
+      <p>Une simulation dynamique procède de la même méthode qu'un prototype numérique appliquée à un sytème mécanique.
+	Cela permet de calculer simplement des efforts, des réponses à des excitations, des bases modales, des paramètres de régulation ...</p>
+      <p>Comme pourrait le faire un modèle par éléments finis.</p>
+      <p></p>		
+    </div>             
+  </div>
+
+  <div class="row header">
+    <h3><a class="vert">Et l'OPEN SOURCE?</a></h3>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12 col-md-12">
+      <p>Nous sommes convaincus que l'OPEN SOURCE est absolument necessaire pour réaliser des calculs de qualités et maitrisés.
+	Le code est accessible, les méthodes sont documentées, les développements sont participatifs.
+	L'OPEN SOURCE contribue à l'acquisition et à la transmission du savoir d'avantage que n'importe quel éditeur de logiciel.
+	Les logiciels ont fait l'objet au minimum de 10 ans de développement et sont utilisés quotidiennement par des milliers de chercheurs.</p>		
+    </div>             
+  </div>
 </div>
 
-<h3><a class="vert">En réalisation</a></h3>
+<!--- PROTOTYPE NUMERIQUE --->
 
+<div class="container ombre" id="prototype">    
+  <div class="row header">
+    <h2><a class="orange">PROTOTYPE NUMERIQUE</a></h2>
+  </div>
 
-<div class="row">
-<div class="col-sm-12 col-md-6">
-  <p>Reprise du modèle à partir des caractéristiques des équipements consultés pour associer coût et performance, analyse de la valeur.</p>
-  <ul>
-    <li>Un equipement à haut rendement est il necessaire, quel serait son amortissement ?</li>
-    <li>Peut on profiter d'un effet de gamme en modifiant les performances de l'équipement ?</li>
-  </ul>
-  <p>La simulation permet de le quantifier de manière réaliste en fonction des conditions de fonctionnement.</p>
-  <p>La simulation permet également d'extraire l'ensemble des paramètres, en particulier les valeurs de gain et des constantes de temps des boucles de régulation, ce qui permet justement un gain de temps lors de la mise en service.</p>
+  <div class="row">
+    <div class="col-sm-12 col-md-6">
+      <img src="img/img1.png" class="img-responsive" alt="Boucle de régulation thermique">
+    </div>
+
+    <div class="col-sm-12 col-md-6">
+      <p>Un prototype numérique lorsqu'il est bien construit peut remplacer un prototype.
+	Il est beaucoup moins cher, permet de simuler en grandeur réelle et d'obtenir une connaissance complète de l'installation.</p>
+      <p>Le prototype est développé en MODELICA langage objet, orienté résolution de système d'equations développé par l'université de Linköping (SUEDE).</p>
+      <p>MODELICA est utilisé dans des systèmes expert comme CATIA développé par Dassault System.</p>
+    </div>             
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12 col-md-6">
+      <p></p>
+      <p>Pour les industries de procédé les fluides sont modélisés mécaniquement(Newtonien, non Newtonien, biphasique, viscoplastique,... ),
+      les équipements proviennent soit de  bibliothèques MODELICA, soit sont développés spécifiquement à partir de modèles CFD ou théorique.
+      Les modèles CFD sont réalisés avec CODE SATURNE développé par EDF.</p>
+      <p>Pour les applications energétiques les machines thermiques sont determinés soit en utilisant des librairies, soit en utilisant des modèles empiriques.</p>  
+      <p>Les echanges sont modélisés et caractérisés en utilisant un logiciel de thermique SYRTHES développé par EDF.</p>
+    </div>
+
+    <div class="col-sm-12 col-md-6">
+      <img src="img/CFD002.png" class="img-responsive" alt="Turbulence dans un réacteur">
+    </div>
+  </div>
+
+  <div class="row">
+    <h3><a class="orange">Pour quel usage?</a></h3>
+    <p>Un prototype numérique permet, à moindre côut:</p>
+    <ul>
+      <li>De dimensionner des equipements,</li>
+      <li>De vérifier un dimensionnement en intégrant les caractéristiques réelles des différents élements,</li>
+      <li>De s'assurer du fonctionnement globale de l'installation en prenant en compte les profils des consommateurs, les inerties ....</li>
+      <li>D'associer un coût à chaque ressource consommée et estimer un coût d'exploitation,</li>
+      <li>De préparer la mise en service en testant les boucles de régulation ainsi que les plages opératoires,</li>
+      <li>Anticiper les conséquences d'éventuelles défaillances, identifier les risques (augmentation de pression, de température ...).</li>
+    </ul>
+  </div>
 </div>
 
-<div class="col-sm-12 col-md-6">
-  <img src="img/U002_Flo.png" class="img-responsive" alt="Une drole de régulation">
-</div>
-</div>
-
-<div class="row">
-  <p></p>
-</div>
-
-<h3><a class="rouge">Et après ?</a></h3>
-<div class="row">
-  <p>Il suffit de recaler le modèle pour obtenir un prototype "As Build". Un changement de produit ? De nouvelle specification ?Beaucoup plus rapide et moins onéreux qu'un essai en grandeur nature ...</p>                
-</div>
-
-<div class="row">
-  <p></p>
-</div>
-
- <div class="page-header" id="simulation">
-   <h1>Simulation Dynamique Equipement Rotatif</h1>
- </div>
- 
- <div class="row">
- <div class="col-sm-12 col-md-6">
-	  <p>La methode consiste à simuler l'équipement dans sa compléxité:</p>
-	  <ul>
-	    <li>Considérer l'ensemble des composants en rotation comme des sources d'excitation,</li>
-	    <li>Intégrer les systèmes de régulation, les élements structuraux, les dispositifs de filtration,</li>
-	    <li>Observer le comportement de l'ensemble...</li>  	  
-	  </ul>
-	</div>
+<!-----SYSTEME MECANIQUE--->
+  
+<div class="container ombre" id="simulation">
+  <div class="row header">
+    <h2><a class="rouge">SIMULATION DYNAMIQUE - SYSTEME MECANIQUE</a></h2>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-md-6">
+      <p>La méthode est la même que celle utilisée pour réaliser un prototype numérique,
+	le système mecanique est développé en MODELICA,
+	Les différents composants sont extraits de librairie ou développés spécifiquement pour le projet.</p>
+      <p>Si nécéssaire, pour définir une base modale, un couplage fluide / structure, nous réalisons une modélisation FEM.
+	Les modèles par eléments finis sont réalisés avec CODE ASTER,
+	puis intégrés dans la simulation dynamique par une fonction de transfert.</p>
+      <p></p>
+    </div>
 	
 
-	<div class="col-sm-12 col-md-6">
-	  <img src="img/U100.png" class="img-responsive" alt="Un Groupe Electro " />
-	</div>
-	</div>
+    <div class="col-sm-12 col-md-6">
+      <img src="img/U100.png" class="img-responsive" alt="Un Groupe Electro " />
+    </div>
+  </div>
 
-	<div class="row">
-	  <p></p>
-	  <p></p>
-	</div>
-	  
-	<div class="row">
-	<h3><a class="rouge">Observation du comportement</a></h3>
-	<div class="row">
-	<div class="col-sm-12 col-md-4">
-	    <img src="img/U005_Res.png" class="img-responsive" alt="Quelques fréquences" />
-	</div>
+ 	  
+  <div class="row">
+    <div class="col-sm-12 col-md-6">
+      <img src="img/U005_Res.png" class="img-responsive" alt="Quelques fréquences" />
+    </div>
 
-	<div class="col-sm-12 col-md-4">
-	  <p>Le système est représenté par ses caractéristiques mécaniques,</p>
-	  <ul>
-	    <li>Qui peuvent être complétées par une régulation sous la forme d'une boucle PID,</li>
-	    <li>Par une base modale determinée par éléments finis.</li>
-	  </ul>
-	  <p>Les résultats permettent de valider la conception d'un chassis, de choisir un accouplement par une analyse torsionnelle et de définir un système de découplage vibratoire pour éviter les transmissions à la structure d'acceuil.</p>
-	</div>
-	<div class="col-sm-12 col-md-4">
-	    <img src="img/Chassis.jpg" class="img-responsive" alt="Un Chassis" />
-	</div>
-	</div>
+    <div class="col-sm-12 col-md-6">
+      <p></p>
+      <p>L'intéret d'une simulation dynamique pour un système mécanique réside dans le multi formalisme du modèle.
+	Le modèle peut, par exemple, associer un equipement électrique, un équipement mécanique, une liaison semi-rigide,
+	un chassis, des dispositifs anti vibratoire...</p>
+      <p>Tous les constituants seront vérifiés simultanément en prenant en compte les actions des uns sur les autres lors de sollicitations continues ou transitoires.</p>
+      <p></p>
+    </div>  
+  </div>
 
-        <!--Contenus appelés dans le footer -->
-      	<footer  class="footer" id="contact">          
-                                <div class="section">
-                                    <h4>Crédits</h4>
-                                  <div class="text">
-                                    <p>Remerciement au consortium MODELICA pour la qualité et la robustesse des simulations dynamiques <a href="http://modelica.org">  MODELICA</a></p>
-				    <p>Remerciement à CODE ASTER pour la souplesse et la puissance de calcul <a href="http://www.code-aster.org">  CODE ASTER</a></p>				 
-                                  </div>
-                                </div>
+</div>
+</div>
 
-                                <div class="section">
-                                    <h4>Contact</h4>
-                                  <div class="text">
-                                    <p>Pour nous contacter : contact@thorvalsen.org ou au 06 11 70 39 66</p>
-                                  </div>
-                                </div>
+<!---------Equipe---------->
 
-                                <div class="section">
-                                    <h4>Configuration minimale</h4>
-                                  <div class="text">
-                                    <p>Vous avez besoin d’un navigateur récent supportant les fonctionnalités du HTML5 et de la CSS3.
-                                      Chrome 10+, Firefox 3.6+, Safari 5+, Opera 10.6+, IE9+ devraient fonctionner correctement.</p>
-                                  </div>
-                                 </div>           
-        <!--finContenus appelés dans le footer -->
-        </footer>
+ <div class="container ombre" id="contact">      
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+	<div class="row header">
+	  <h3><a class="bleu">Qui sommes nous ?</a></h3>
+	</div>
+	<p>Thorvalsen est une START UP, créée par Marc GRABER en 2015.</p>
+	<p>Marc GRABER est ingénieur INSA en Génie Mécanique et utilise / contribue aux solutions OPEN SOURCE depuis une vingtaine d'année.</p>
+	<p>Notre objectif est de promouvoir et encourager l'usage de logiciel libre dans l'industrie, au travers de réalisations.</p>
+	<p>Nous pouvons réaliser plusieurs types de prestation :</p>
+	<ul>
+	  <li>Pour répondre à une problématique particulière ou à une vérification, la simulation est utilisée pour produire un rapport,</li>
+	  <li>Dans le cas d'une installation complexe, la simulation est transmise sous forme de code source ou d'applicatif avec sa documentation,</li>
+	  <li>Nous proposons une machine virtuelle avec l'ensemble des logiciels installés et configurés prête à être utilisée.</li>
+	  <li>Nous vous assisterons pour toute évolution ou utilisation de nos simulations.</li> 
+      </div>
+
+      <div class="col-sm-12 col-md-6">
+	<div class="row header">
+	  <h3><a class="bleu">Pour nous contacter !</a></h3>
+	</div>
+	<p>Vous pouvez nous écrire à contact@thorvalvsen.org</p>
+	<p>Vous pouvez nous appeler au 06 11 70 39 66</p>
+	<p>Vous pouvez nous suivre sur DIASPORA</p>
+	<p>Nous avons mis à disposition une série de librairie, de petites unités virtuelles sur <a href="http://www.github.com/">GITHUB</a>
+      </div>             
+    </div>
+ 
+
+<!--Contenus appelés dans le footer -->
+
+ <footer style="position: relative;" role="contentinfo" class="row hidden-print">          
+    <div class="clearfix col-sm-12">
+    <div class="row">
+      <h4>Crédits</h4>
+    <div class="text">
+      <p>Remerciement au consortium  <a href="http://modelica.org">MODELICA</a> pour la qualité et la robustesse des simulations dynamiques</p>
+      <p>Remerciement à EDF et au CEA  pour le développement de<a href="http://www.code-aster.org"> CODE ASTER</a>,<a href="http://www.code-saturne.org"> CODE SATURNE</a> alliant souplesse et puissance de calcul.</p>
+    </div>			 
+    </div>
+
+    <div class="row">
+      <h4>Mentions légales</h4>
+    <div class="text">
+      <p>THORVALVSEN EIRL est une entreprise à responsabilité limitée, domiciliée à LYON, SIREN 817893050</p>
+    </div>			 
+    </div>
+
+    <div class="row">
+      <h4>Configuration minimale</h4>
+    <div class="text">
+      <p>Vous avez besoin d’un navigateur récent supportant les fonctionnalités du HTML5 et de la CSS3. Chrome 10+, Firefox 3.6+, Safari 5+, Opera 10.6+, IE9+ devraient fonctionner correctement.</p>
+    </div>
+    </div>        
+    </div>   
+ <!--finContenus appelés dans le footer -->
+ </footer>
 </div>    
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ <!-- Include all compiled plugins (below), or include individual files as needed -->
+ <script src="js/bootstrap.min.js"></script>
+</body>
 </html>
